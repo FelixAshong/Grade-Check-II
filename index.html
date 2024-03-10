@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Your Marks</title>
+    <link rel="shortcut icon" href="https://www.colorcombos.com/images/colors/FF3C00.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+      <h2 id="heading">Submit Your Marks</h2>
+      <div class="Information_wrapper">
+        <div class="info">
+                <form action="#" name="datas">
+                 <label for="it">I.T</label>
+                <input type="number" name="it" id="it" placeholder="Type Your number">
+
+                <label for="geography">Geography</label>
+                <input type="number" name="geography" id="geography" placeholder="Type Your number">
+
+                <label for="physics">physics</label>
+                <input type="number" name="physics" id="physics" placeholder="Type Your number">
+
+                <label for="biology">biology</label>
+                <input type="number" name="biology" id="biology" placeholder="Type Your number">
+
+                <label for="chemistry">chemistry</label>
+                <input type="number" name="chemistry" id="chemistry" placeholder="Type Your number">
+
+                <label for="emaths">E-Maths</label>
+                <input type="number" name="emaths" id="emaths" placeholder="Type Your number">
+
+                <button onclick="document.getElementById('result').style.display='inline-block',grading_it(datas.it.value) , grading_geo(datas.geography.value),  grading_phy(datas.physics.value),  grading_bio(datas.biology.value),  grading_che(datas.chemistry.value),  grading_emaths(datas.emaths.value)" type="button">Submit</button>
+                </form>
+        </div>
+
+        <div id="result" class="result">
+           <h3 align="center">Results</h3>
+
+           <div id="h4_results" class="h4_results">
+           <h4 id="res_heading_it"></h4>
+           <h4 id="res_heading_geo"></h4>
+           <h4 id="res_heading_phy"></h4>
+           <h4 id="res_heading_bio"></h4>
+           <h4 id="res_heading_che"></h4>
+           <h4 id="res_heading_emaths"></h4>
+         </div>
+        </div>
+
+     </div>
+   </div>
+
+   
+   
+   <script src="custom.js"></script>
+</body>
+</html>
